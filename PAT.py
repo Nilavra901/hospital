@@ -19,6 +19,7 @@ def view_patient(patient_id: int):
     raise HTTPException(status_code=404, detail ="Patient not found")
 @app.get('/sort')
 def sort_patients(sort_by: str=Query(...,description='sort on the basis of height ,weight,bmi'),order:str=query(asc))
+#NILAVRA GHOSH
 
     
     
